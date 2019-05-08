@@ -1,0 +1,252 @@
+2019-05-08 19:33:46.302 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:33:46.524 +08:00 [ERR] An exception occurred while trying to decrypt the element.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+2019-05-08 19:33:46.649 +08:00 [ERR] An exception occurred while processing the key element '<key id="2aa70ac4-967b-4f32-aa9c-27b384375e5d" version="1" />'.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+2019-05-08 19:33:46.659 +08:00 [WRN] Key "2aa70ac4-967b-4f32-aa9c-27b384375e5d" is ineligible to be the default key because its CreateEncryptor method failed.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DeferredKey.<>c__DisplayClass1_0.<GetLazyDescriptorDelegate>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.get_Descriptor()
+   at Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory.CreateEncryptorInstance(IKey key)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.CreateEncryptor()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+2019-05-08 19:33:46.677 +08:00 [WRN] Key "2aa70ac4-967b-4f32-aa9c-27b384375e5d" is ineligible to be the default key because its CreateEncryptor method failed.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DeferredKey.<>c__DisplayClass1_0.<GetLazyDescriptorDelegate>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.get_Descriptor()
+   at Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory.CreateEncryptorInstance(IKey key)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.CreateEncryptor()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+2019-05-08 19:33:46.689 +08:00 [ERR] An exception occurred while trying to decrypt the element.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+2019-05-08 19:33:46.695 +08:00 [ERR] An exception occurred while processing the key element '<key id="f9e38d5a-45c2-47b0-a084-6ebced8ae1a0" version="1" />'.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+2019-05-08 19:33:46.700 +08:00 [WRN] Key "f9e38d5a-45c2-47b0-a084-6ebced8ae1a0" is ineligible to be the default key because its CreateEncryptor method failed.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DeferredKey.<>c__DisplayClass1_0.<GetLazyDescriptorDelegate>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.get_Descriptor()
+   at Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory.CreateEncryptorInstance(IKey key)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.CreateEncryptor()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+2019-05-08 19:33:46.711 +08:00 [WRN] Key "f9e38d5a-45c2-47b0-a084-6ebced8ae1a0" is ineligible to be the default key because its CreateEncryptor method failed.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DeferredKey.<>c__DisplayClass1_0.<GetLazyDescriptorDelegate>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.get_Descriptor()
+   at Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory.CreateEncryptorInstance(IKey key)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.CreateEncryptor()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+2019-05-08 19:33:46.721 +08:00 [WRN] Key "2aa70ac4-967b-4f32-aa9c-27b384375e5d" is ineligible to be the default key because its CreateEncryptor method failed.
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DeferredKey.<>c__DisplayClass1_0.<GetLazyDescriptorDelegate>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.get_Descriptor()
+   at Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory.CreateEncryptorInstance(IKey key)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.CreateEncryptor()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+2019-05-08 19:33:46.733 +08:00 [INF] Creating key "dcad5148-a7f0-48cd-ae47-c1a4b24afae6" with creation date "2019-05-08T11:33:46.7316040+00:00", activation date "2019-05-08T11:33:46.3968295+00:00", and expiration date "2019-08-06T11:33:46.3968295+00:00".
+2019-05-08 19:33:46.774 +08:00 [INF] Writing data to file 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys\key-dcad5148-a7f0-48cd-ae47-c1a4b24afae6.xml'.
+2019-05-08 19:33:47.451 +08:00 [FTL] Unable to start Kestrel.
+System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions, Action`1 configureOptions)
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2019-05-08 19:35:40.128 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:35:40.721 +08:00 [FTL] Unable to start Kestrel.
+System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions, Action`1 configureOptions)
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2019-05-08 19:36:16.030 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:36:16.566 +08:00 [FTL] Unable to start Kestrel.
+System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions, Action`1 configureOptions)
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2019-05-08 19:37:42.984 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:37:52.484 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-05-08 19:37:52.604 +08:00 [INF] Request finished in 120.6817ms 307 
+2019-05-08 19:37:52.706 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-05-08 19:37:52.747 +08:00 [INF] Request finished in 41.0334ms 404 
+2019-05-08 19:38:00.688 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2019-05-08 19:38:00.789 +08:00 [INF] Request finished in 101.8169ms 200 text/html
+2019-05-08 19:38:01.305 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2019-05-08 19:38:01.439 +08:00 [INF] Request finished in 134.8126ms 200 application/json;charset=utf-8
+2019-05-08 19:38:18.721 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Values?imgName=logo  
+2019-05-08 19:38:18.725 +08:00 [INF] Executing endpoint 'ImageDemo.Controllers.ValuesController.Get (ImageDemo)'
+2019-05-08 19:38:18.752 +08:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action ImageDemo.Controllers.ValuesController.Get (ImageDemo)
+2019-05-08 19:38:19.320 +08:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'DbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-05-08 19:38:20.643 +08:00 [INF] Executed DbCommand (936ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2019-05-08 19:38:20.670 +08:00 [INF] Executing action method ImageDemo.Controllers.ValuesController.Get (ImageDemo) with arguments (["logo"]) - Validation state: "Valid"
+2019-05-08 19:38:20.681 +08:00 [INF] 图片 logo 不存在
+2019-05-08 19:38:20.685 +08:00 [INF] Executed action method ImageDemo.Controllers.ValuesController.Get (ImageDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.0288ms.
+2019-05-08 19:38:20.695 +08:00 [INF] Executing ObjectResult, writing value of type 'ImageDemo.CustomStatusCode'.
+2019-05-08 19:38:20.704 +08:00 [INF] Executed action ImageDemo.Controllers.ValuesController.Get (ImageDemo) in 1947.7544ms
+2019-05-08 19:38:20.707 +08:00 [INF] Executed endpoint 'ImageDemo.Controllers.ValuesController.Get (ImageDemo)'
+2019-05-08 19:38:20.716 +08:00 [INF] Request finished in 1994.6019ms 404 application/json; charset=utf-8
+2019-05-08 19:39:55.152 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:39:57.421 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2019-05-08 19:39:57.692 +08:00 [INF] Request finished in 272.6401ms 200 text/html
+2019-05-08 19:39:58.296 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2019-05-08 19:39:58.443 +08:00 [INF] Request finished in 147.1951ms 200 application/json;charset=utf-8
+2019-05-08 19:40:05.959 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Values?imgName=logo  
+2019-05-08 19:40:05.999 +08:00 [INF] Executing endpoint 'ImageDemo.Controllers.ValuesController.Get (ImageDemo)'
+2019-05-08 19:40:06.036 +08:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action ImageDemo.Controllers.ValuesController.Get (ImageDemo)
+2019-05-08 19:40:06.815 +08:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'DbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-05-08 19:40:07.230 +08:00 [INF] Executed DbCommand (276ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2019-05-08 19:40:07.303 +08:00 [INF] Executing action method ImageDemo.Controllers.ValuesController.Get (ImageDemo) with arguments (["logo"]) - Validation state: "Valid"
+2019-05-08 19:40:07.316 +08:00 [INF] Executed action method ImageDemo.Controllers.ValuesController.Get (ImageDemo), returned result Microsoft.AspNetCore.Mvc.FileContentResult in 1.3154000000000001ms.
+2019-05-08 19:40:07.325 +08:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '' ...
+2019-05-08 19:40:07.336 +08:00 [INF] Executed action ImageDemo.Controllers.ValuesController.Get (ImageDemo) in 1295.8693ms
+2019-05-08 19:40:07.339 +08:00 [INF] Executed endpoint 'ImageDemo.Controllers.ValuesController.Get (ImageDemo)'
+2019-05-08 19:40:07.345 +08:00 [INF] Request finished in 1385.8069ms 200 image/jpeg
+2019-05-08 19:41:19.697 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:41:21.554 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2019-05-08 19:41:21.754 +08:00 [INF] Request finished in 203.202ms 200 text/html
+2019-05-08 19:41:22.361 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2019-05-08 19:41:22.518 +08:00 [INF] Request finished in 156.9648ms 200 application/json;charset=utf-8
+2019-05-08 19:42:45.148 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Values multipart/form-data; boundary=--------------------------757254625022216035943291 4497
+2019-05-08 19:42:45.177 +08:00 [INF] Executing endpoint 'ImageDemo.Controllers.ValuesController.Post (ImageDemo)'
+2019-05-08 19:42:45.202 +08:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action ImageDemo.Controllers.ValuesController.Post (ImageDemo)
+2019-05-08 19:42:45.946 +08:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'DbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-05-08 19:42:46.144 +08:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2019-05-08 19:42:46.241 +08:00 [INF] Executing action method ImageDemo.Controllers.ValuesController.Post (ImageDemo) with arguments (["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinder+FileCollection"]) - Validation state: "Valid"
+2019-05-08 19:48:51.955 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:48:53.872 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2019-05-08 19:48:54.049 +08:00 [INF] Request finished in 178.6672ms 200 text/html
+2019-05-08 19:48:54.715 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2019-05-08 19:48:54.895 +08:00 [INF] Request finished in 179.7981ms 200 application/json;charset=utf-8
+2019-05-08 19:49:00.498 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Values multipart/form-data; boundary=--------------------------652049261404951440997046 4497
+2019-05-08 19:49:00.529 +08:00 [INF] Executing endpoint 'ImageDemo.Controllers.ValuesController.Post (ImageDemo)'
+2019-05-08 19:49:00.553 +08:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action ImageDemo.Controllers.ValuesController.Post (ImageDemo)
+2019-05-08 19:49:01.267 +08:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'DbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-05-08 19:49:01.461 +08:00 [INF] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2019-05-08 19:49:01.554 +08:00 [INF] Executing action method ImageDemo.Controllers.ValuesController.Post (ImageDemo) with arguments (["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinder+FileCollection"]) - Validation state: "Valid"
+2019-05-08 19:49:01.567 +08:00 [INF] Executed action method ImageDemo.Controllers.ValuesController.Post (ImageDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.5521000000000003ms.
+2019-05-08 19:49:01.577 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ImageDemo.CustomStatusCode, ImageDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-05-08 19:49:01.586 +08:00 [INF] Executed action ImageDemo.Controllers.ValuesController.Post (ImageDemo) in 1028.8123ms
+2019-05-08 19:49:01.587 +08:00 [INF] Executed endpoint 'ImageDemo.Controllers.ValuesController.Post (ImageDemo)'
+2019-05-08 19:49:01.590 +08:00 [INF] Request finished in 1092.5022ms 200 application/json; charset=utf-8
+2019-05-08 19:51:40.052 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:51:41.991 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2019-05-08 19:51:42.181 +08:00 [INF] Request finished in 192.7626ms 200 text/html
+2019-05-08 19:51:42.803 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2019-05-08 19:51:42.958 +08:00 [INF] Request finished in 155.2843ms 200 application/json;charset=utf-8
+2019-05-08 19:51:53.879 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Values multipart/form-data; boundary=--------------------------207966207908563246830815 2476244
+2019-05-08 19:51:53.916 +08:00 [INF] Executing endpoint 'ImageDemo.Controllers.ValuesController.Post (ImageDemo)'
+2019-05-08 19:51:53.945 +08:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action ImageDemo.Controllers.ValuesController.Post (ImageDemo)
+2019-05-08 19:51:54.645 +08:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'DbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-05-08 19:51:54.823 +08:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2019-05-08 19:51:54.980 +08:00 [INF] Executing action method ImageDemo.Controllers.ValuesController.Post (ImageDemo) with arguments (["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinder+FileCollection"]) - Validation state: "Valid"
+2019-05-08 19:52:34.474 +08:00 [INF] User profile is available. Using 'C:\Users\10456\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-05-08 19:52:36.106 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2019-05-08 19:52:36.294 +08:00 [INF] Request finished in 189.6042ms 200 text/html
+2019-05-08 19:52:36.869 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2019-05-08 19:52:37.009 +08:00 [INF] Request finished in 140.496ms 200 application/json;charset=utf-8
+2019-05-08 19:53:09.468 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Values multipart/form-data; boundary=--------------------------013630932528543036282786 349076
+2019-05-08 19:53:09.525 +08:00 [INF] Executing endpoint 'ImageDemo.Controllers.ValuesController.Post (ImageDemo)'
+2019-05-08 19:53:09.550 +08:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action ImageDemo.Controllers.ValuesController.Post (ImageDemo)
+2019-05-08 19:53:10.220 +08:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'DbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-05-08 19:53:10.414 +08:00 [INF] Executed DbCommand (93ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2019-05-08 19:53:10.532 +08:00 [INF] Executing action method ImageDemo.Controllers.ValuesController.Post (ImageDemo) with arguments (["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinder+FileCollection"]) - Validation state: "Valid"
+2019-05-08 19:53:10.559 +08:00 [INF] Executed action method ImageDemo.Controllers.ValuesController.Post (ImageDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 16.717000000000002ms.
+2019-05-08 19:53:10.569 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ImageDemo.CustomStatusCode, ImageDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-05-08 19:53:10.580 +08:00 [INF] Executed action ImageDemo.Controllers.ValuesController.Post (ImageDemo) in 1025.7094ms
+2019-05-08 19:53:10.583 +08:00 [INF] Executed endpoint 'ImageDemo.Controllers.ValuesController.Post (ImageDemo)'
+2019-05-08 19:53:10.589 +08:00 [INF] Request finished in 1121.1073ms 200 application/json; charset=utf-8
+2019-05-08 19:53:31.998 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Values multipart/form-data; boundary=--------------------------762087342205274759507498 3484
+2019-05-08 19:53:32.002 +08:00 [INF] Executing endpoint 'ImageDemo.Controllers.ValuesController.Post (ImageDemo)'
+2019-05-08 19:53:32.004 +08:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action ImageDemo.Controllers.ValuesController.Post (ImageDemo)
+2019-05-08 19:53:32.046 +08:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'DbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-05-08 19:53:32.094 +08:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2019-05-08 19:53:32.117 +08:00 [INF] Executing action method ImageDemo.Controllers.ValuesController.Post (ImageDemo) with arguments (["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinder+FileCollection"]) - Validation state: "Valid"
+2019-05-08 19:53:32.129 +08:00 [INF] Executed action method ImageDemo.Controllers.ValuesController.Post (ImageDemo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 10.041500000000001ms.
+2019-05-08 19:53:32.141 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ImageDemo.CustomStatusCode, ImageDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-05-08 19:53:32.142 +08:00 [INF] Executed action ImageDemo.Controllers.ValuesController.Post (ImageDemo) in 136.3568ms
+2019-05-08 19:53:32.143 +08:00 [INF] Executed endpoint 'ImageDemo.Controllers.ValuesController.Post (ImageDemo)'
+2019-05-08 19:53:32.145 +08:00 [INF] Request finished in 147.1386ms 200 application/json; charset=utf-8
+2019-05-08 19:53:59.248 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Values?imgName=%E6%BA%90%E6%B0%8F  
+2019-05-08 19:53:59.250 +08:00 [INF] Executing endpoint 'ImageDemo.Controllers.ValuesController.Get (ImageDemo)'
+2019-05-08 19:53:59.282 +08:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action ImageDemo.Controllers.ValuesController.Get (ImageDemo)
+2019-05-08 19:53:59.284 +08:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'DbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-05-08 19:53:59.310 +08:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2019-05-08 19:53:59.331 +08:00 [INF] Executing action method ImageDemo.Controllers.ValuesController.Get (ImageDemo) with arguments (["源氏"]) - Validation state: "Valid"
+2019-05-08 19:53:59.338 +08:00 [INF] Executed action method ImageDemo.Controllers.ValuesController.Get (ImageDemo), returned result Microsoft.AspNetCore.Mvc.FileContentResult in 2.9979ms.
+2019-05-08 19:53:59.341 +08:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '' ...
+2019-05-08 19:53:59.404 +08:00 [INF] Executed action ImageDemo.Controllers.ValuesController.Get (ImageDemo) in 120.7449ms
+2019-05-08 19:53:59.407 +08:00 [INF] Executed endpoint 'ImageDemo.Controllers.ValuesController.Get (ImageDemo)'
+2019-05-08 19:53:59.408 +08:00 [INF] Request finished in 160.0075ms 200 image/jpeg

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImageDemo</name>
+    </assembly>
+    <members>
+        <member name="M:ImageDemo.Controllers.ValuesController.Post(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            批量上传图片
+            </summary>
+            <param name="file"></param>
+            <param name="formCollection"></param>
+        </member>
+        <member name="M:ImageDemo.Controllers.ValuesController.Get(System.String)">
+            <summary>
+            获取图片
+            </summary>
+            <param name="imgName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImageDemo.IRepositories.IImagesResource.LoadingPhoto(System.String,System.String)">
+            <summary>
+            加载图片
+            </summary>
+            <param name="path">地址</param>
+            <param name="name">图片名</param>
+            <returns></returns>
+        </member>
+        <member name="M:ImageDemo.IRepositories.IImagesResource.UpLoadPhoto(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="formFile"></param>
+            <param name="path">路劲</param>
+            <param name="name">图片名字</param>
+            <returns></returns>
+        </member>
+        <member name="T:ImageDemo.Model.Images">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="M:ImageDemo.Repositories.ImagesResource.LoadingPhoto(System.String,System.String)">
+            <summary>
+            加载图片
+            </summary>
+            <param name="path"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImageDemo.Repositories.ImagesResource.UpLoadPhoto(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="formFile"></param>
+            <param name="path">路劲</param>
+            <param name="name">图片名字</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
